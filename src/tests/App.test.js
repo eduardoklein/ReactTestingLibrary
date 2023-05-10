@@ -11,7 +11,6 @@ test('Testa se o topo da aplicacao tem um conjunto de links', () => {
     </BrowserRouter>,
   );
   const home = screen.getByText(/Home/);
-  console.log(home);
   expect(home).toBeInTheDocument();
   expect(home).toHaveTextContent('Home');
   const about = screen.getByText(/About/);
